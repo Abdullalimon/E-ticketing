@@ -13,7 +13,7 @@
 
 <body class="">
     <header>
-        <div class="navbar bg-base-100 px-24 py-16">
+        <div class="navbar bg-base-100 lg:px-24 px-5 lg:py-16 py-4">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -46,8 +46,8 @@
                         src="images/bus-icon.png" alt=""> </a>
             </div>
         </div>
-        <div class="px-24 ">
-            <div class="hero min-h-svh  rounded-3xl border-none" style="background-image : url(images/banner.png);">
+        <div class="lg:px-24 px-5 ">
+            <div class="hero lg:min-h-svh  rounded-3xl border-none" style="background-image : url(images/banner.png);">
                 <div class="hero-overlay bg-opacity-40"></div>
                 <div class="hero-content text-center text-neutral-content">
                     <div class="max-w-3xl mt-4">
@@ -55,14 +55,14 @@
                                 class="text-lime-500 mb-6 mt-6">P Paribahan</span></h1>
                         <p class="mb-5">We have very large leg space in between seats.You can spend 12 hours without any
                             discomfort in our seats</p>
-                        <button class="btn border-[#1DD100] bg-[#1DD100] mt-5">Buy Tickets</button>
+                        <button onclick="scrollWin()" class="btn border-[#1DD100] bg-[#1DD100] mt-5">Buy Tickets</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-3 gap-6 px-24 py-10 absolute">
+        <div class="grid lg:grid-cols-3 gap-6 lg:px-24 px-5 py-10 lg:absolute">
             <div
-                class="bg-white w-[350px] border-2 border-b-[#1DD100] rounded-xl p-7 flex gap-5 absolute -top-20 left-48">
+                class="bg-white w-[350px] border-2 border-b-[#1DD100] rounded-xl p-7 flex gap-5 lg:absolute lg:-top-20 lg:left-48">
                 <img src="images/people.png" alt="">
                 <div>
                     <h1 class="text-3xl font-extrabold">500k+</h1>
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div
-                class="bg-white w-[350px] border-2 border-b-[#1DD100] rounded-xl p-7 flex gap-5 absolute -top-20 left-[600px]">
+                class="bg-white w-[350px] border-2 border-b-[#1DD100] rounded-xl p-7 flex  gap-5 lg:absolute lg:-top-20 lg:left-[600px]">
                 <img src="images/ticket-cupon.png" alt="">
                 <div>
                     <h1 class="text-3xl font-extrabold">1.7 lacks</h1>
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div
-                class="bg-white w-[350px] border-2 border-b-[#1DD100] rounded-xl p-7 flex gap-5 absolute -top-20 left-[1000px]">
+                class="bg-white w-[350px] border-2 border-b-[#1DD100] rounded-xl p-7 flex gap-5 lg:absolute lg:-top-20 lg:left-[1000px]">
                 <img src="images/stoppage.png" alt="">
                 <div>
                     <h1 class="text-3xl font-extrabold">80K+</h1>
@@ -88,53 +88,53 @@
         </div>
     </header>
     <main>
-        <section class="py-28">
+        <section class="lg:py-28">
             <h3 class="text-4xl text-center font-bold text-[#030712]">Best offers for you</h3>
-            <div class="flex gap-16 mt-7 px-24 relative">
-                <div class="flex border-3 justify-evenly rounded-lg bg-[#FFBF0F] w-[573px] gap-28 p-5">
+            <div class="flex lg:flex-row flex-col gap-16 mt-7 lg:px-24 lg:relative">
+                <div class="flex border-3 lg:justify-evenly rounded-lg bg-[#FFBF0F] lg:w-[573px] gap-28 p-5">
                     <div class="align-middle">
-                        <h2 class="text-4xl font-black">15% OFF</h2>
+                        <span> class="text-4xl font-black">15% OFF</span>
                         <h4 class="text-xl font-semibold">on your next purchase</h4>
                         <p>use by January 2024</p>
                     </div>
                     <div>
-                        <span>
-                            <h2 class="text-3xl font-bold font-raleway">NEW15</h2>
+                        <span id="coupon-card">
+                            <h2>class="text-3xl font-bold font-raleway">NEW15</h2>
                             <p>Coupon Code</p>
                         </span>
                     </div>
 
                 </div>
-                <div class="relative  right-[350px]">
+                <div class="relative  lg:right-[350px] ">
                     <img src="images/cupon-devider.png" alt="">
                 </div>
-                <div class="flex border-3 rounded-lg bg-[#F78C9C] w-[573px] gap-20 p-6">
+                <div class="flex border-3 rounded-lg bg-[#F78C9C] lg:w-[573px] lg:gap-20 p-6">
                     <div>
                         <h2 class="text-4xl font-black">20% OFF</h2>
                         <h4 class="text-xl font-semibold">on your next purchase</h4>
                         <p>use by January 2024</p>
                     </div>
                     <div>
-                        <span>
+                        <span id="coupon-card">
                             <h2 class="text-3xl font-bold font-raleway">Couple 20</h2>
                             <p>Coupon Code</p>
                         </span>
                     </div>
 
                 </div>
-                <div class="relative  right-[350px]">
+                <div class="relative  lg:right-[350px] ">
                     <img src="images/cupon-devider.png" alt="">
                 </div>
             </div>
 
         </section>
-        <section class="font-raleway bg-[#F7F8F8] rounded-xl border-2 border-t-[#1DD100] space-y-6 py-20">
+        <section id="scroll" class="font-raleway bg-[#F7F8F8] rounded-xl border-2 border-t-[#1DD100] space-y-6 lg:py-20">
             <h3 class="text-4xl font-bold text-center ">L.K Paribahan</h3>
             <p class="text-center text-[#030712]">Yes, you can run unit tests and view the results directly within the
                 app. The integrated testing features
                 allow for a streamlined .</p>
-            <div class="px-24 ">
-                <div class="flex  justify-between border-none rounded-xl  bg-white ">
+            <div class="lg:px-24 ">
+                <div class="flex lg:flex-row  justify-between border-none rounded-xl  bg-white ">
                     <div class="">
                         <div class="flex gap-56 p-5">
                             <div class="flex ">
@@ -148,7 +148,7 @@
                             </div>
                             <div class="flex">
                                 <div><img src="images/seat-green.png" alt=""></div>
-                                <div><button><span>40 Seats left</span></button></div>
+                                <div><button><span id="seats-Left">40 Seats left</span></button></div>
                             </div>
                         </div>
                         <div class="p-6">
@@ -204,114 +204,114 @@
 
                         </div>
 
-                        <div class="flex   gap-16 mt-10 px-5 ">
+                        <div class="flex lg:flex-row gap-16 mt-10 px-5 ">
                             <p>A</p>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">A1</kbd>
-                                <kbd class="kbd w-[110px]">A2</kbd>
+                                <kbd id="A1" class="kbd w-[110px]">A1</kbd>
+                                <kbd id="A2" class="kbd w-[110px]">A2</kbd>
                             </div>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">A3</kbd>
-                                <kbd class="kbd w-[110px]">A4</kbd>
+                                <kbd id="A3" class="kbd w-[110px]">A3</kbd>
+                                <kbd id="A4" class="kbd w-[110px]">A4</kbd>
                             </div>
                         </div>
                         <div class="flex   gap-16 mt-10 px-5 ">
                             <p>B</p>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">B1</kbd>
-                                <kbd class="kbd w-[110px]">B2</kbd>
+                                <kbd id="B1" class="kbd w-[110px]">B1</kbd>
+                                <kbd id="B2"class="kbd w-[110px]">B2</kbd>
                             </div>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">B3</kbd>
-                                <kbd class="kbd w-[110px]">B4</kbd>
+                                <kbd id="B3" class="kbd w-[110px]">B3</kbd>
+                                <kbd id="B4" class="kbd w-[110px]">B4</kbd>
                             </div>
                         </div>
                         <div class="flex   gap-16 mt-10 px-5 ">
                             <p>C</p>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">C1</kbd>
-                                <kbd class="kbd w-[110px]">C2</kbd>
+                                <kbd id="C1" class="kbd w-[110px]">C1</kbd>
+                                <kbd id="C2" class="kbd w-[110px]">C2</kbd>
                             </div>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">C3</kbd>
-                                <kbd class="kbd w-[110px]">C4</kbd>
+                                <kbd id="C3" class="kbd w-[110px]">C3</kbd>
+                                <kbd id="C4" class="kbd w-[110px]">C4</kbd>
                             </div>
                         </div>
                         <div class="flex   gap-16 mt-10 px-5 ">
                             <p>D</p>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">D1</kbd>
-                                <kbd class="kbd w-[110px]">D2</kbd>
+                                <kbd id="D1" class="kbd w-[110px]">D1</kbd>
+                                <kbd id="D2" class="kbd w-[110px]">D2</kbd>
                             </div>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">D3</kbd>
-                                <kbd class="kbd w-[110px]">D4</kbd>
+                                <kbd id="D3" class="kbd w-[110px]">D3</kbd>
+                                <kbd id="D4" class="kbd w-[110px]">D4</kbd>
                             </div>
                         </div>
                         <div class="flex   gap-16 mt-10 px-5 ">
                             <p>E</p>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">E1</kbd>
-                                <kbd class="kbd w-[110px]">E2</kbd>
+                                <kbd id="E1" class="kbd w-[110px]">E1</kbd>
+                                <kbd id="E2" class="kbd w-[110px]">E2</kbd>
                             </div>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">E3</kbd>
-                                <kbd class="kbd w-[110px]">E4</kbd>
+                                <kbd id="E3" class="kbd w-[110px]">E3</kbd>
+                                <kbd id="E4" class="kbd w-[110px]">E4</kbd>
                             </div>
                         </div>
                         <div class="flex   gap-16 mt-10 px-5 ">
                             <p>F</p>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">F1</kbd>
-                                <kbd class="kbd w-[110px]">F2</kbd>
+                                <kbd id="F1" class="kbd w-[110px]">F1</kbd>
+                                <kbd id="F2" class="kbd w-[110px]">F2</kbd>
                             </div>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">F3</kbd>
-                                <kbd class="kbd w-[110px]">F4</kbd>
+                                <kbd id="F3" class="kbd w-[110px]">F3</kbd>
+                                <kbd id="F4" class="kbd w-[110px]">F4</kbd>
                             </div>
                         </div>
                         <div class="flex   gap-16 mt-10 px-5 ">
                             <p>G</p>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">G1</kbd>
-                                <kbd class="kbd w-[110px]">G2</kbd>
+                                <kbd id="G1" class="kbd w-[110px]">G1</kbd>
+                                <kbd id="G2" class="kbd w-[110px]">G2</kbd>
                             </div>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">G3</kbd>
-                                <kbd class="kbd w-[110px]">G4</kbd>
+                                <kbd id="G3" class="kbd w-[110px]">G3</kbd>
+                                <kbd id="G4" class="kbd w-[110px]">G4</kbd>
                             </div>
                         </div>
                         <div class="flex   gap-16 mt-10 px-5 ">
                             <p>H</p>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">H1</kbd>
-                                <kbd class="kbd w-[110px]">H2</kbd>
+                                <kbd id="H1" class="kbd w-[110px]">H1</kbd>
+                                <kbd id="H2" class="kbd w-[110px]">H2</kbd>
                             </div>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">H3</kbd>
-                                <kbd class="kbd w-[110px]">H4</kbd>
+                                <kbd id="H3" class="kbd w-[110px]">H3</kbd>
+                                <kbd id="H4" class="kbd w-[110px]">H4</kbd>
                             </div>
                         </div>
                         <div class="flex   gap-16 mt-10 px-5 ">
                             <p>I</p>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">I1</kbd>
-                                <kbd class="kbd w-[110px]">I2</kbd>
+                                <kbd id="I1" class="kbd w-[110px]">I1</kbd>
+                                <kbd id="I2" class="kbd w-[110px]">I2</kbd>
                             </div>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">I3</kbd>
-                                <kbd class="kbd w-[110px]">I4</kbd>
+                                <kbd id="I3" class="kbd w-[110px]">I3</kbd>
+                                <kbd id="I4" class="kbd w-[110px]">I4</kbd>
                             </div>
                         </div>
                         <div class="flex   gap-16 mt-10 px-5 ">
                             <p>J</p>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">J1</kbd>
-                                <kbd class="kbd w-[110px]">J2</kbd>
+                                <kbd id="J1" class="kbd w-[110px]">J1</kbd>
+                                <kbd id="J2" class="kbd w-[110px]">J2</kbd>
                             </div>
                             <div class="flex gap-8">
-                                <kbd class="kbd w-[110px]">J3</kbd>
-                                <kbd class="kbd w-[110px]">J4</kbd>
+                                <kbd id="J3" class="kbd w-[110px]">J3</kbd>
+                                <kbd id="J4" class="kbd w-[110px]">J4</kbd>
                             </div>
                         </div>
                     </div>
@@ -328,23 +328,23 @@
                         </div>
                         <hr>
                         <div class="flex gap-24 font-inter">
-                            <span>A1</span>
+                            <span id="seat-chose">A1</span>
                             <p>Economoy</p>
                             <span>550</span>
                         </div>
                         <div class="flex gap-24 font-inter">
-                            <span>A1</span>
+                            <span id="seat-chose">A1</span>
                             <p>Economoy</p>
                             <span>550</span>
                         </div>
                         <hr>
                         <div class="flex justify-between font-inter">
                             <h3 class="font-medium text-xl">Total Price</h3>
-                            <span>BDT1100</span>
+                            <span id="total-Price">BDT0</span>
 
                         </div>
 
-                        <input class="text-sm font-inter w-[360px] p-4" type="text"
+                        <input id="coupon-Input" class="text-sm font-inter w-[360px] p-4" type="text"
                             placeholder="Have Any Coupon"><button class="btn bg-[#1DD100]">Apply</button>
 
 
@@ -383,6 +383,8 @@
             </div>
         </section>
     </main>
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/index.js"></script>
     <footer class="footer p-10 bg-neutral text-neutral-content">
         <div class="flex gap-[900px] p-7 space-y-5">
             <aside>
